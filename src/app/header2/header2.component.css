@@ -1,0 +1,28 @@
+.navbar{
+    justify-content: space-between;
+    }
+     
+    mat-sidenav-container{
+        height: 87%;
+    }
+    mat-sidenav {
+        padding: 25px;
+    }
+    
+    
+    .my-app-name {
+    margin:20rem;
+    }
+
+
+.image{
+    height:40em; 
+    background-size:cover;
+    width:auto;
+    background-image:url('/assets/IOT2.jpg');
+    background-position:50% 50%;
+  }
+
+
+    
+    

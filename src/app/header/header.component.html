@@ -1,0 +1,36 @@
+<mat-toolbar color="warn" class="navbar">
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon color="primary">grade</mat-icon>
+    </button>
+    
+    <div class="logo">MyWebsite</div>
+    <div>
+        <span>Contact</span>
+        <mat-icon matBadge="10" matBadgePosition="above after" class="noti">
+            notifications
+        </mat-icon>
+    </div>
+    
+</mat-toolbar>
+<mat-sidenav-container #appMenu>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content> Main
+        <button (click)="opened=!opened">Toggle Opened</button>
+        <button (click)="sidenav.open()">Open</button>
+        <button (click)="sidenav.close()">Close</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<!--
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Help</button>
+</mat-menu>
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon color="primary">grade</mat-icon>
+</button>
+
+<mat-button-toggle>Toggle</mat-button-toggle>
+<div>
+    <span matBadge="5">Notification</span>
+</div>
+-->
